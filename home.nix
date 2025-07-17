@@ -15,6 +15,15 @@
   # release notes.
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
+  programs.git = {
+    enable = true;
+    userName = "Arnoldo Paz Medrano";
+    userEmail = "apaz074@gmail.com";
+    extraConfig = {
+      init.defaultBranch = "main";
+    };
+  };
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = [
