@@ -20,6 +20,11 @@
 
   modules.zsh.enable = true;
 
+  services.podman = {
+    enable = true;
+    settings.registries.search = [ "docker.io" "ghcr.io" "quay.io" "registry.redhat.io" ];
+  };
+
   programs.git = {
     enable = true;
     userName = "Arnoldo Paz Medrano";
