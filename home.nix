@@ -4,6 +4,13 @@
   imports = [
     ./modules/zsh.nix
   ];
+  nix = {
+    package = pkgs.nix;
+    settings = {
+      experimental-features = "nix-command flakes";
+    };
+  };
+
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "apaz074";
