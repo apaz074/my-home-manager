@@ -45,6 +45,7 @@
         };
         initContent = ''
             [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+            eval "$(devbox global shellenv --init-hook)"
         '';
     };
 
